@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Kalam|Lobster+Two" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<title>BMW I8</title>
+		<style>
+			body{background:url(img/bmw-i8-nature.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;}
+			#logo > img{
+				width: 10%;
+			}
+			#logo > h2{
+				display: inline;
+				font-size: 25px;
+				font-family: 'Lobster Two', cursive
+				}
+			h2{color: SlateBlue;}
+			#logo{
+				display: flex;
+				align-items: center;
+			}
+			#main{
+				display: flex;
+				}
+			a{
+				color: SlateBlue;
+				text-decoration: none;
+			}
+			li{
+				list-style: none;
+				margin: 7px 15px;
+				font-size: 16px;
+				min-width: 100px;
+				font-family:'Black+Ops+One',cursive
+			}
+			header{
+				display: flex;
+				margin: 20px 2px;
+			}
+			#dropdown{padding: 0; position: absolute; margin: 0;}
+			#dropdown{display: none;}
+			#drop-list:hover #dropdown{display: block;}
+			#drop-list{position: relative;}
+			#link{display: none;}
+			#link{padding: 0; position: absolute; margin: 0;}
+			#news{position: relative;}
+			#news:hover #link{display: block;}
+			#btn{text-align: center; margin-top: 200px;
+					}
+			button{width: 20%;
+					font-family: 'Kalam', cursive;
+					height: 50px;
+					border-radius: 10px;
+					font-size: 25px;
+					color: SlateBlue;}
+			#btn > h1{font-family: 'Kalam', cursive;
+						color: SlateBlue;}
+			#section{padding: 0; position: absolute; margin: 0;}
+			#section{display: none;}
+			#about{position: relative;}
+			#about:hover #section{display: block;}
+			#icon{display: none;}
+
+			@media screen and (max-width: 991px){
+				#icon{display: block;}
+				#main{display: none;}
+			}
+			#contact{outline: none;}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div id="logo">
+				<img src="img/logo.png">
+				<h2>BMW in your life!</h2>
+			</div>
+			<div id="main">
+				<li id="news">
+					<a href="#">NEWS
+						<ul id="link">
+							<li><a href="#">ABOUT COMPANY</a></li>
+							<li><a href="#">ABOUT BMW MODELS</a></li>
+						</ul>
+					</a>
+				</li>
+				<li id="drop-list">
+					<a href="#">MODELS
+					    <ul id="dropdown">
+							<li><a href="#">BMW Sedan</a></li>
+							<li><a href="#">BMW X</a></li>
+							<li><a href="#">BMW GRAN TURISMO</a></li>
+							<li><a href="#">BMW I</a></li>
+						</ul>
+					</a>
+				</li>
+				<li id="about">
+					<a href="#">ABOUT
+						<ul id="section">
+							<li><a href="#">COMPANY</a></li>
+							<li><a href="#">BMW MODELS</a></li>
+						</ul>
+					</a>
+				</li>
+				<li><a href="#">BUY</a></li>
+				<li><a href="#">CAREERS</a></li>
+			</div>
+			<button id="icon">
+    		  	<i class="fa fa-bars"></i>
+			  </button>
+		</header>
+		<main>
+			<div id="btn">
+				<h1>If you want to get information about bmw, click the button!</h1>
+				<button id="contact">CONTACT</button>
+			</div>
+		</main>
+	</body>
+</html>
